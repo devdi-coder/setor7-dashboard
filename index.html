@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setor 7 // Controle de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="overlay-scanline"></div> <div class="main-container">
+        <header>
+            <h1 class="pixel-text">SETOR 7 // SISTEMA DE TREINAMENTO BRASILEIRO</h1>
+        </header>
+
+        <section class="input-area">
+            <input type="text" id="soldier-input" placeholder="IDENTIFIQUE O SOLDADO..." maxlength="12">
+            <button id="add-btn" class="pixel-btn">INICIAR PROTOCOLO</button>
+        </section>
+
+        <section class="status-bar">
+            <div class="stat">TOTAL: <span id="total-count">0</span></div>
+            <div class="stat">ATIVAS: <span id="active-count">0</span></div>
+            <div class="stat">CONCLUÍDAS: <span id="completed-count">0</span></div>
+        </section>
+        
+        <main>
+            <ul id="soldier-list"></ul>
+        </main>
+    </div>
+
+    <div id="confirmation-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="portrait-container"></div> <div id="modal-text"></div>
+            </div>
+            <div class="modal-actions">
+                <button id="confirm-modal-btn" class="pixel-btn confirm">CONFIRMAR</button>
+                <button id="cancel-modal-btn" class="pixel-btn cancel">CANCELAR</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>DESENVOLVIDO POR <a href="https://github.com/devdi-coder" target="_blank">DEVDI-CODER</a> // SETOR 7 PROTOCOL</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
